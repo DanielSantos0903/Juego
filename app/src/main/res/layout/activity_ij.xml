@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IniciarJuego"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Juego Iniciado!"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="#050B11"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:id="@+id/TotalPuntos"
+            android:layout_width="291dp"
+            android:layout_height="wrap_content"
+            android:text="Puntos: 0pts"
+            android:textSize="15dp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/btnFinalizar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Finalizar"
+            tools:layout_editor_absoluteX="72dp"
+            tools:layout_editor_absoluteY="83dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CPU"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#050B11"
+        android:layout_marginBottom="5dp"
+        />
+    <Button
+        android:id="@+id/btnCPU"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="..."
+        tools:layout_editor_absoluteX="72dp"
+        tools:layout_editor_absoluteY="83dp"
+        android:layout_marginBottom="55dp"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="72dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="180dp"
+        android:text="VS"
+        android:textColor="#050B11"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/Ganador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text=" "
+        android:textColor="#050B11"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+</LinearLayout>
+
+    <TextView
+        android:id="@+id/Respuesta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="30dp"
+        android:text="  " />
+    <TextView
+        android:id="@+id/player"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#050B11"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center_horizontal"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="30dp">
+
+        <Button
+            android:id="@+id/btnPiedra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="O"
+            tools:layout_editor_absoluteX="72dp"
+            tools:layout_editor_absoluteY="83dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="30dp"/>
+
+        <Button
+            android:id="@+id/btnTijera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X"
+            tools:layout_editor_absoluteX="72dp"
+            tools:layout_editor_absoluteY="156dp"
+            android:layout_marginHorizontal="15dp"/>
+
+        <Button
+            android:id="@+id/btnPapel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="[ ]"
+            tools:layout_editor_absoluteX="72dp"
+            tools:layout_editor_absoluteY="246dp"
+            android:layout_marginHorizontal="15dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/Ganados"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Ganados: "
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/Perdidos"
+            android:layout_width="137dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Perdidos: " />
+
+        <TextView
+            android:id="@+id/Empatados"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Empatados: " />
+    </LinearLayout>
+
+</LinearLayout>
